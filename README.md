@@ -34,6 +34,9 @@ from audiomentations import Compose, ApplyImpulseResponse
 # if the `ApplyImpulseResponse` augmentation is selected
 IMPULSE_RESP_DIR = "./path/to/this/repo"
 
+# or, if you prefer a more specific folder, like just EchoThief Venues, you can specify it like so:
+#IMPULSE_RESP_DIR = "./path/to/this/repo/echo_thief/Venues"
+
 # define your audio augmentations pipeline
 augmentation_pipeline = Compose([
     # Add whatever transforms here you like...
