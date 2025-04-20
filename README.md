@@ -1,6 +1,6 @@
 # impulse-response-audio-files
 
-<img src="header.jpg" alt="impulse-response-audio-files" width="800" height="auto">
+<img src="header.jpg" alt="impulse-response-audio-files" width="600" height="auto">
 
 There wasn't a great source of pure `.wav` files of impulse response files. So I decided to start compiling them here. 
 
@@ -14,14 +14,14 @@ I have pruned datasets to keep the selections from each small, diverse, and high
 
 ```bash
 # Clone the repo! this will be your IR directory
-git clone git@github.com:worldveil/impulse-response-audio-files.git ./free_impulse_responses
+git clone git@github.com:worldveil/impulse-response-audio-files.git
 
 # or alternatively, if you'd like as a part of your repository as a submodule
 mkdir -p ./your/path/here/
-git submodule add git@github.com:worldveil/impulse-response-audio-files.git ./your/path/here/
+git submodule add git@github.com:worldveil/impulse-response-audio-files.git
 
 # install python packages
-cd ./your/path/here
+cd impulse-response-audio-files
 pip install -r requirements.txt
 ```
 
