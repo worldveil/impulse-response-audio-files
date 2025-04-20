@@ -19,7 +19,7 @@ I have pruned datasets to keep the selections from each small, diverse, and high
 git clone git@github.com:worldveil/impulse-response-audio-files.git
 
 # or alternatively, if you'd like as a part of your repository as a submodule
-mkdir -p ./your/path/here/
+mkdir -p impulse-response-audio-files
 git submodule add git@github.com:worldveil/impulse-response-audio-files.git
 
 # install python packages
