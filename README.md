@@ -1,5 +1,7 @@
 # impulse-response-audio-files
 
+![impulse-response-audio-files](header.jpg)
+
 There wasn't a great source of pure `.wav` files of impulse response files. So I decided to start compiling them here. 
 
 These are useful in music production in convolutional reverb plugins/VSTs, but also in creating augmentations on training sets for audio neural networks!
