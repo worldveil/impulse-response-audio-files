@@ -1,6 +1,6 @@
 # impulse-response-audio-files
 
-<img src="header.jpg" alt="impulse-response-audio-files" width="600" height="auto">
+<img src="header.jpg" alt="impulse-response-audio-files" width="600" height="auto" style="display: block; margin: auto;">
 
 There wasn't a great source of pure `.wav` files of impulse response files. So I decided to start compiling them here. 
 
