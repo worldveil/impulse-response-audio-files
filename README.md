@@ -2,13 +2,16 @@
 
 There wasn't a great source of pure `.wav` files of impulse response files. So I decided to start compiling them here. 
 
-These are useful in music production in convolutional reverb plugins/VSTs, but also in creating augmentations on training sets for audio neural networks! 
+These are useful in music production in convolutional reverb plugins/VSTs, but also in creating augmentations on training sets for audio neural networks!
+
+I have pruned datasets to keep the selections from each small, diverse, and high quality.
 
 > NOTE: Each dataset has a different license. Check on `README.md` in each folder and please abide by it!
 
 ## Quickstart
 
 ```bash
+# Clone the repo! this will be your IR directory
 git clone git@github.com:worldveil/impulse-response-audio-files.git ./free_impulse_responses
 
 # or alternatively, if you'd like as a part of your repository as a submodule
@@ -53,7 +56,9 @@ for transform in augmentation_pipeline.transforms:
     print(f"{transform.__class__.__name__}: {transform.parameters}")
 ```
 
-or, if you'd just like to do it in torch without the `audiomentions` package:
+## Or, in pure torch...
+
+If you'd just like to do it in torch without the `audiomentions` package:
 
 ```python
 import torch
@@ -77,9 +82,11 @@ torchaudio.save("speech_with_ir_fftconvolve.wav", torch.tensor(augmented_speech)
 
 ## Selection criteria
 
-Many IR datsets consist of hundreds (or thousands!) of recordings from a small handful (or even a single) room. This is not as useful when trying to perform augmentations on AI training set data. 
+Many IR datsets consist of hundreds of recordings from a few (or even a single) room, or are for very specifc use cases like binural or spatial audio. 
 
-Thus, I have included small, simple, but diverse datasets here. You're welcome :)
+This is not as useful when trying to perform augmentations on AI training set data for use in real world scenarios. Resources like [RealRIRs](https://github.com/jonashaag/RealRIRs) are lovely, but not really what I needed.
+
+Thus, I have included small, simple, but diverse datasets here. And I often excluded many similar, undifferentiated responses from the same dataset.
 
 ## Usage in audio AI / ML
 
@@ -88,4 +95,3 @@ This library is great for applying IR responses as a wholistic part of audio aug
 So I elect to simply do my data preprocessing and augmentations on CPU.
 
 Check out [torch tutorial on audio augmentations](https://pytorch.org/audio/stable/tutorials/audio_data_augmentation_tutorial.html#sphx-glr-tutorials-audio-data-augmentation-tutorial-py) as well as the repo for [`audiomentations`](https://github.com/iver56/audiomentations?tab=readme-ov-file#usage-example).
-
